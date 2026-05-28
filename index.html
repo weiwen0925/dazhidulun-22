@@ -223,14 +223,6 @@ img{-webkit-user-drag:none;pointer-events:none;}
   .toc-grid{grid-template-columns:1fr;}
 }
 </style>
-<meta content="noai, noimageai, noarchive, nosnippet, noimageindex, nofollow, noindex" name="robots"/>
-<meta content="noai, noimageai, noarchive, nosnippet" name="googlebot"/>
-<meta content="noindex" name="ai"/>
-<meta content="noindex" name="cohere-ai"/>
-<meta content="noindex" name="anthropic-ai"/>
-<meta content="noindex" name="claude-web"/>
-<meta content="noindex" name="bytespider"/>
-<meta content="noindex" name="gptbot"/>
 <meta name="wy-full-protection" content="v3-blank">
 
 <meta name="robots" content="noai, noimageai, noarchive, nosnippet, noimageindex, nofollow, noindex">
@@ -840,13 +832,13 @@ html:not(.wy-revealed) body{display:none!important;}
       }catch(e){}
     });
 
-    // 二. [data-wytext]: 解碼回 textContent
+    // 二. [data-wytext]: 解碼回 innerHTML（內容含 <br>/<small> 等）
     document.querySelectorAll('[data-wytext]').forEach(function(el){
       try{
         var enc = el.getAttribute('data-wytext');
         var plain = _decode(enc, key);
         if(plain === null) return;
-        el.textContent = plain;
+        el.innerHTML = plain;
         el.removeAttribute('data-wytext');
       }catch(e){}
     });
