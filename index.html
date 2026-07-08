@@ -617,4 +617,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C22P2:END-->
+<!--WY-C22P3:BEGIN-->
+<style id="wy-c22p3-css">
+.c22p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c22p3-fabbox.show{display:block;}
+.c22p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c22p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c22p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c22p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c22p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c22p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c22p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c22p3-modal.open{display:flex;}
+.c22p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c22p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c22p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c22p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c22p3-close:hover{background:#e3d5b8;}
+.c22p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c22p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c22p3-tbl th,.c22p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c22p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c22p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c22p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c22p3-tbl b{color:#8b2500;}
+.c22p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c22p3-note b{color:#8b2500;}
+@media(max-width:900px){.c22p3-fabbox{right:14px;}.c22p3-tbl{font-size:11.5px;}.c22p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c22p3-fabbox" id="c22p3Box"><button class="c22p3-btn" id="c22p3Btn" type="button" aria-label="開啟全景總表"><span class="c22p3-ic">▦</span><span class="c22p3-ls"><span class="c22p3-l1">本品 · 念僧</span><span class="c22p3-l2">五眾福田 · 名實同源二諦 · 表相的陷阱</span></span></button></div><div class="c22p3-modal" id="c22p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c22p3-card"><button class="c22p3-close" id="c22p3Close" type="button" aria-label="關閉">×</button><h3>卷二十二·第三品 念僧 · 全景總表</h3><p class="sub">卷二十二・第三品｜五眾具足・名實二諦・破惑機制・無上福田緣起力學・表相陷阱・佛僧無別</p><table class="c22p3-tbl"><caption>一、念僧的定義與名實二諦（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>所念為何</td><td>念僧所緣是<b>戒、定、慧、解脫、解脫知見五眾具足</b>的四雙八輩聖僧（聲聞、辟支佛、菩薩三類聖僧共通的內在德行），而非僧人身份外相</td></tr><tr><td>核心提問</td><td>前品已用五眾讚佛，佛已究竟圓滿，為何同一套讚詞重複用於尚未圓滿的弟子眾？——這是「法身如何在不同載體中顯現」的邏輯探討</td></tr><tr><td>名實二諦</td><td><b>實具足</b>（如佛所得而讚·究竟無增減）／<b>名具足</b>（隨弟子所得、盡得而讚·相應趨近）；佛是五眾的究竟圓滿態、僧是動態趨近態，本質同源、差別在徹底與否</td></tr><tr><td>小結</td><td>僧團的價值正在於它是通往「實具足」的<b>動態過程</b>——念僧就是憶念這條從凡入聖、從名趨實的活路</td></tr></tbody></table><table class="c22p3-tbl"><caption>二、破惑機制與無上福田的緣起力學</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>價值重塑</td><td>異於外道——在家眾讚富貴豪勢、出家眾讚邪見苦行執論諍競；佛唯讚弟子「一切功德根本住處」的五眾內德（不取外相唯觀內機制）</td></tr><tr><td>五眾破惑流程</td><td>五眾非靜態德行清單，而是連續戰鬥流程——<b>戒（安足）→ 定（引弓）→ 慧（放箭）→ 解脫（破煩惱賊）→ 解脫知見（賊破心歡喜）</b>；如健人安足挽弓放箭破怨敵</td></tr><tr><td>福田的物理學</td><td>以智慧犁耕出結使根、四無量心磨治調柔（僧側）；檀越下信施穀子、溉以念施恭敬清淨心水（施側）——今世後世得無量樂及三乘果</td></tr><tr><td>少施得大報</td><td><b>薄拘羅施一呵梨勒果</b>→九十一劫無病、<b>沙門二十億施一房舍</b>→九十一劫足不蹈地；緣起性空的倍增——供養投入「無我」空性田，回報不受「自我」有限框架局限故無限放大</td></tr><tr><td>廣略相攝</td><td>經說學人十八、無學九共二十七聖，此處但說「四雙八輩」——廣略相攝，二十七聖皆攝於八輩中，確立僧田完整性</td></tr></tbody></table><table class="c22p3-tbl"><caption>三、表相的陷阱與佛僧無別（含中觀）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>見形不取德</td><td>長者請僧拒沙彌公案——以年歲、族姓、辯才、形貌量聖凡是根本謬誤；聖德在內在「破惑機制」，不在外相老少富貴</td></tr><tr><td>獅子吼·蚊子測海</td><td>沙彌獅子吼、無常示現；凡夫以表相量聖德，如蚊子測海——四事（王子、小龍、小火、沙彌）不可輕，眾僧如大海水不可斗量</td></tr><tr><td>佛僧無二</td><td>佛勝抑僧勝之辯——佛力的證明顯僧大力，然同皆為寶、不當妄分別；佛寶與僧寶無二無別</td></tr><tr><td>念僧真伴</td><td>療癒的鐵三角（佛法僧）中，僧是趣向涅槃的真伴——雄猛軍摧魔王賊，一心念僧入聖流</td></tr><tr><td>中觀收攝</td><td>僧之可貴不在外相（緣起假名），而在它是一套「動態破惑機制」與「供養無限放大的空性福田」；念僧即憶念從名趨實、緣起無自性故功德可無限增長的活路</td></tr></tbody></table><p class="c22p3-note">「念僧」把讚佛的五眾功德移用於尚未究竟的弟子眾，立刻引出尖銳一問——佛已圓滿，何須以同樣讚頌加於僧？論主以「<b>名具足／實具足</b>」二諦化解：佛是五眾的究竟態、僧是趨近態，本質同源。僧之可貴不在年歲富貴辯才等外相，而在兩處中觀樞紐：其一，五眾是一套「戒安足→定引弓→慧放箭→解脫破賊」的<b>動態破惑機制</b>；其二，僧是「無我」的空性福田，故少施能得大報——回報不再受「自我」有限框架局限。以表相量聖德如蚊子測海，眾僧如大海水不可斗量，佛寶僧寶無二無別。</p></div></div>
+<script id="wy-c22p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c22p3Btn"),BOX=document.getElementById("c22p3Box"),MODAL=document.getElementById("c22p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c22p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C22P3:END-->
 </body></html>
