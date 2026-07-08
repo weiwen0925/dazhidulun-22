@@ -723,4 +723,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C22P4:END-->
+<!--WY-C22P5:BEGIN-->
+<style id="wy-c22p5-css">
+.c22p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c22p5-fabbox.show{display:block;}
+.c22p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c22p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c22p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c22p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c22p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c22p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c22p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c22p5-modal.open{display:flex;}
+.c22p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c22p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c22p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c22p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c22p5-close:hover{background:#e3d5b8;}
+.c22p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c22p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c22p5-tbl th,.c22p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c22p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c22p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c22p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c22p5-tbl b{color:#8b2500;}
+.c22p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c22p5-note b{color:#8b2500;}
+@media(max-width:900px){.c22p5-fabbox{right:14px;}.c22p5-tbl{font-size:11.5px;}.c22p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c22p5-fabbox" id="c22p5Box"><button class="c22p5-btn" id="c22p5Btn" type="button" aria-label="開啟全景總表"><span class="c22p5-ic">▦</span><span class="c22p5-ls"><span class="c22p5-l1">本品 · 念捨</span><span class="c22p5-l2">三種捨和合 · 由福入慧 · 究竟之捨無所得</span></span></button></div><div class="c22p5-modal" id="c22p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c22p5-card"><button class="c22p5-close" id="c22p5Close" type="button" aria-label="關閉">×</button><h3>卷二十二·第五品 念捨 · 全景總表</h3><p class="sub">卷二十二・第五品｜三種捨和合・財施邏輯・兄弟擔金・法施無量・應病與藥・究竟無所得</p><table class="c22p5-tbl"><caption>一、念捨總義·三種捨的和合（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>雙重結構</td><td>「念捨」有二種捨——<b>施</b>（外在給予）與<b>捨諸煩惱</b>（內在斷除）；施又分財施、法施。財施、法施、捨煩惱三者和合，總名為「捨」</td></tr><tr><td>從給予到斷除</td><td>關鍵在把「捨」從一般理解的「給予」（把財物給出去），擴展到「斷除」（把煩惱捨掉）——<b>前者是福德累積、後者是智慧成就</b></td></tr><tr><td>八念樞紐</td><td>念捨居八念之中，既向外連結「有為福德」（財施法施）、又向內連結「無為智慧」（捨煩惱），是<b>由福入慧的橋樑</b></td></tr><tr><td>福德之根</td><td>「上四念因緣故得差煩惱病，今以何因緣得是四念？則是先世今世於三寶中少有布施因緣」——福德的根扎在「施」上</td></tr></tbody></table><table class="c22p5-tbl"><caption>二、財施的邏輯與法施的超越</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>財施為根本</td><td>財物是種種煩惱罪業因緣；持戒禪定智慧是涅槃因緣——「<b>財物尚應自棄，何況好福田中而不布施</b>」；過去諸佛初發心皆以少多布施為初助道因緣</td></tr><tr><td>兄弟擔金</td><td>二兄弟各擔十斤金、各生殺心奪金，既悟乃共投金於水、互道「善哉」——<b>捨金即捨黃金所牽動的不善心</b>；財為惡心因緣，常應自捨</td></tr><tr><td>慳施對照</td><td>慳人室宅如丘塚墓、為財生憂畏、命終墮死坑懊恨；施者如行寶藏、堅牢船、好密蓋，度貧窮海、命終生天久必涅槃（訶慳讚施布施偈）</td></tr><tr><td>法施第一</td><td>二種施中法施第一——<b>財施果報有量（欲界報），法施果報無量（三界報、出三界報）</b>；須清淨（不求名聞財利勢力、但為學佛道弘慈悲度眾），否則淪為「市易法」</td></tr><tr><td>施捨的經濟學</td><td>財施施多財物<b>減少</b>、法施施多法更<b>增益</b>；財施是舊法（救飢渴寒熱肉身之苦）、法施是新法（除九十八使心靈病根）——應病與藥、觀機投藥、離於二邊</td></tr></tbody></table><table class="c22p5-tbl"><caption>三、捨諸煩惱與究竟之捨（含中觀）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>捨諸煩惱</td><td>決斷的藝術——捨的第三重是內在斷除煩惱；欲除心惡破慳貪故念捨、欲令受者得樂故破瞋恚、信福得果報故破邪見</td></tr><tr><td>究竟之捨</td><td>由捨財、捨法，進而捨煩惱，乃至<b>連「捨」的境界與對「解脫」的執著也要捨</b>——無所得的解脫（若存「我能捨」則仍是執）</td></tr><tr><td>三種捨的螺旋</td><td>財施（斬惡心因緣）→ 法施（除心靈病根）→ 捨煩惱（斷三毒）→ 究竟捨（捨解脫執）——由外而內、由福入慧、層層深化</td></tr><tr><td>三大記憶錨點</td><td>中觀心法總持——施者、受者、施物三輪體空；能捨所捨俱不可得，方為波羅蜜之捨（有所得則落有量福德）</td></tr><tr><td>當下的自由</td><td>行者自省——每一次布施若能三輪體空、不存「我能捨」之相，當下即是自由；<b>捨到無可捨處，即是般若</b></td></tr></tbody></table><p class="c22p5-note">「念捨」把單純的「給予」層層拆解為一個<b>由外而內、由福入慧</b>的完整體系——財施（斬斷惡心因緣，如兄弟擔金投水互道善哉）、法施（果報無量、除心靈病根，須清淨否則淪為市易）、捨諸煩惱（斷三毒），乃至最終<b>連「捨」的境界與對解脫的執著也要捨</b>。其中觀究竟在於「三輪體空」——施者、受者、施物俱不可得，能捨所捨俱泯，方為波羅蜜之捨。念捨居八念之中，正是連接「有為福德」與「無為智慧」的橋樑：捨到無可捨處，即是般若。</p></div></div>
+<script id="wy-c22p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c22p5Btn"),BOX=document.getElementById("c22p5Box"),MODAL=document.getElementById("c22p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c22p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C22P5:END-->
 </body></html>
