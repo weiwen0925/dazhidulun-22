@@ -1597,4 +1597,52 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH22P4:END-->
+<!--WY-BH22P5:BEGIN-->
+<style id="wy-bh22p5-css">
+.bh22p5-fabbox{position:fixed;right:22px;bottom:260px;z-index:123;display:none;}
+.bh22p5-fabbox.show{display:block;}
+.bh22p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh22p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh22p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh22p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh22p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh22p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh22p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh22p5-modal.open{display:flex;}
+.bh22p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh22p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh22p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh22p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh22p5-close:hover{background:#dde2e6;}
+.bh22p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh22p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh22p5-tbl th,.bh22p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh22p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh22p5-tbl thead th:nth-child(1){width:32%;}.bh22p5-tbl thead th:nth-child(2){width:41%;}.bh22p5-tbl thead th:nth-child(3){width:27%;}
+.bh22p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh22p5-guan{background:#eef2f5;color:#37505f;}
+.bh22p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh22p5-tbl tbody tr:nth-child(even) td.bh22p5-guan{background:#e8eef2;}
+.bh22p5-tbl b{color:#8b2500;}
+.bh22p5-guan b{color:#2f6b5a;}
+.bh22p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh22p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh22p5-fabbox{right:14px;}.bh22p5-tbl{font-size:11px;}.bh22p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh22p5-fabbox" id="bh22p5Box"><button class="bh22p5-btn" id="bh22p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh22p5-ic">譯</span><span class="bh22p5-ls"><span class="bh22p5-l1">本品 · 原文·白話·中觀</span><span class="bh22p5-l2">白話翻譯表</span></span></button></div><div class="bh22p5-modal" id="bh22p5Modal" role="dialog" aria-modal="true"><div class="bh22p5-card"><button class="bh22p5-close" id="bh22p5Close" type="button" aria-label="關閉">×</button><h3>卷二十二 · 第5品 白話翻譯表（念捨）</h3><p class="sub">大智度論卷二十二·念捨 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh22p5-tbl"><caption>念捨 · 原文｜白話翻譯｜中觀概念（共22段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh22p5-src">「念捨」者，有二種捨：一者、施，二者、捨諸煩惱。施捨有二種：一者、財施，二者、法施。三種捨和合，名為捨。</td><td>所謂「念捨」有二種捨：一是布施，二是捨諸煩惱。布施又分二：財施與法施。財施、法施、捨煩惱三者和合，總名為「捨」。</td><td class="bh22p5-guan"><b>三種捨和合</b>——財施·法施·捨煩惱三者合名為捨，由福入慧的樞紐。</td></tr><tr><td class="bh22p5-src">上四念因緣故得差煩惱病，今以何因緣故得是四念？則是先世、今世於三寶中少有布施因緣故。</td><td>前四念（念佛法僧戒）能療煩惱之病；那是憑什麼因緣才得這四念的呢？正是先世今世於三寶中曾有少分布施的因緣。</td><td class="bh22p5-guan"><b>福德之根在施</b>——四念能療病，皆繫於宿今對三寶的布施因緣。</td></tr><tr><td class="bh22p5-src">財施是一切善法根本故，行者作是念：「上四念因緣故得差煩惱病，今以何因緣故得是四念？則是先世、今世於三寶中少有布施因緣故。」所以者何？眾生於無始世界中不知於三寶中布施故，福皆盡滅。是三寶有無量法，是故施亦不盡，必得涅槃。</td><td>財施是一切善法的根本。行者思惟：前四念能療煩惱病，能得四念，全繫於宿世今生對三寶的少分布施。眾生無始以來因不知向三寶布施，福德都耗盡了；三寶功德無量，故向此布施，福也不盡，終必得涅槃。</td><td class="bh22p5-guan"><b>施三寶福不盡</b>——三寶功德無量，故施亦不盡、終必涅槃（緣起無盡）。</td></tr><tr><td class="bh22p5-src">復次，過去諸佛初發心時，皆以少多布施為因緣；如佛說：「是布施是初助道因緣。」</td><td>再者，過去諸佛初發心時，都以或多或少的布施為因緣，如佛說：「布施是最初的助道因緣。」</td><td class="bh22p5-guan"><b>布施為初助道緣</b>——諸佛初發心皆以布施為緣，施是入道起點。</td></tr><tr><td class="bh22p5-src">復次，人命無常，財物如電，若人不乞，猶尚應與，何況乞而不施？以是應施，作助道因緣。</td><td>再者，人命無常、財物如電，即使無人來乞尚且應主動施與，何況有人來求而不施？所以應布施，作為助道的因緣。</td><td class="bh22p5-guan"><b>財如電·常應施</b>——人命財物無常，無乞尚應與，況乞而不施。</td></tr><tr><td class="bh22p5-src">復次，財物是種種煩惱罪業因緣；若持戒、禪定、智慧種種善法，是涅槃因緣。以是故，財物尚應自棄，何況好福田中而不布施？</td><td>再者，財物是種種煩惱罪業的因緣；持戒、禪定、智慧等善法才是涅槃的因緣。所以財物尚且應當自行棄捨，何況面對好福田而不布施？</td><td class="bh22p5-guan"><b>財為惑因·當捨</b>——財是煩惱罪業之緣；持戒定慧才是涅槃之緣。</td></tr><tr><td class="bh22p5-src">譬如有兄弟二人，各擔十斤金行道中，更無餘伴。兄作是念：「我何以不殺弟取金？此曠路中人無知者。」弟復生念，欲殺兄取金。兄弟各有惡心，語言視瞻皆異。兄弟即自悟，還生悔心：「我等非人，與禽獸何異？同生兄弟，而為少金故而生惡心！」兄弟共至深水邊，兄以金投著水中。弟言：「善哉！善哉！」弟尋復棄金水中。兄復言：「善哉！善哉！」兄弟更互相問，何以故言善哉？各相答言：「我以此金故，生不善心，欲相危害；今得棄之，故言善哉！」二辭各爾。</td><td>譬如兄弟二人，各挑十斤金走在曠路、更無他伴。兄想：「我何不殺弟奪金？此曠野無人知曉。」弟也起念要殺兄奪金；兄弟各懷惡心，言語神色都變了。兄弟隨即醒悟、生起悔心：「我等豈是人？與禽獸何異？同胞兄弟竟為少許金而生惡心！」於是同到深水邊，兄把金投入水中，弟說「善哉善哉」；弟也隨即棄金於水，兄也說「善哉善哉」。彼此互問為何說善哉，各答：「我因這金生了不善心、想害對方；如今能棄掉它，所以說善哉！」</td><td class="bh22p5-guan"><b>兄弟擔金喻</b>——捨金即捨黃金牽動的不善心；財為惡心因緣。</td></tr><tr><td class="bh22p5-src">以是故知財為惡心因緣，常應自捨！何況施得大福而不施？如說：</td><td>由此可知財物是惡心的因緣，本就應當自捨！何況布施能得大福而竟不施？如偈所說（訶慳讚施）：</td><td class="bh22p5-guan"><b>訶慳讚施</b>——慳為凶衰、施為寶藏，常念施福慳過。</td></tr><tr><td class="bh22p5-src">如是等種種訶慳貪、讚布施，是名念財施。</td><td>如是種種呵責慳貪、讚歎布施，這就叫「念財施」。</td><td class="bh22p5-guan"><b>念財施</b>——訶慳讚施，總結念財施一節。</td></tr><tr><td class="bh22p5-src">云何念法施？行者作是念：「法施利益甚大！法施因緣故，一切佛弟子等得道。」</td><td>什麼是「念法施」？行者思惟：「法施利益極大！因法施之故，一切佛弟子才得道。」</td><td class="bh22p5-guan"><b>法施利大</b>——法施令佛弟子得道，利益甚大。</td></tr><tr><td class="bh22p5-src">復次，佛說：「二種施中，法施為第一。」何以故？財施果報有量，法施果報無量。財施欲界報；法施三界報，亦出三界報。若不求名聞、財利、力勢，但為學佛道，弘大慈悲，度眾生生、老、病、死苦，是名清淨法施。若不爾者，為如市易法。</td><td>再者，佛說「二種施中法施第一」。為什麼？財施果報有量、只感欲界之報；法施果報無量、通於三界乃至出三界。若不求名聞財利勢力、只為令眾生學佛道、弘大慈悲、度眾生生老病死苦，這是清淨法施；否則就如做買賣的市易之法。</td><td class="bh22p5-guan"><b>法施第一·須清淨</b>——財施有量、法施無量；不求名利、但為度眾才清淨。</td></tr><tr><td class="bh22p5-src">復次，財施施多，財物減少；法施施多，法更增益。財施是無量世中舊法，法施聖法初來未得，名為新法。財施但能救諸飢渴、寒熱等病，法施能除九十八諸煩惱等病。如是等種種因緣分別財施、法施，行者應念法施。</td><td>再者，財施施多則財物減少，法施施多則法義更增益；財施是無量世來早有的舊法，法施是聖法初來難得的新法；財施只能救飢渴寒熱等身病，法施能除九十八使等心病。以這種種因緣分別財施法施，行者應念法施。</td><td class="bh22p5-guan"><b>施捨經濟學</b>——財施愈施愈減、法施愈施愈增；財救身病、法除心病。</td></tr><tr><td class="bh22p5-src">是法施應觀眾生心性、煩惱多少、智慧利鈍，應隨所利益而為說法；譬如隨病服藥則有益。</td><td>這法施應觀察眾生的心性、煩惱多少、智慧利鈍，隨其所能得益而說法；譬如隨病服藥才有益。</td><td class="bh22p5-guan"><b>應病與藥</b>——觀眾生心性利鈍，隨機說法，如隨病服藥。</td></tr><tr><td class="bh22p5-src">有婬欲重，有瞋恚重，有愚癡重，有兩兩雜、三三雜。婬重者為說不淨觀，瞋重者為說慈心，癡重者為說深因緣，兩雜者說兩觀，三雜者說三觀。若人不知病相，錯投藥者，病則為增。</td><td>有人婬欲重、有人瞋恚重、有人愚癡重，也有兩兩相雜、三三相雜的。婬重者為說不淨觀、瞋重者為說慈心觀、癡重者為說深因緣觀；兩雜者說兩觀、三雜者說三觀。若不知病相而錯投藥，病反而加重。</td><td class="bh22p5-guan"><b>對治門</b>——婬說不淨、瞋說慈心、癡說因緣；錯投藥則病增。</td></tr><tr><td class="bh22p5-src">若著眾生相者，為說但有五眾，此中無我；若言無眾生相者，即為說五眾相續有，不令墮斷滅故。</td><td>若人執著「有眾生」之相，就為他說「只有五眾、其中無我」；若人說「無眾生相」（墮斷滅），就為他說「五眾相續而有」，使他不墮斷滅。</td><td class="bh22p5-guan"><b>離斷常二邊</b>——執有眾生說無我、墮斷滅說相續，令不落兩邊。</td></tr><tr><td class="bh22p5-src">求富樂者，為說布施；欲生天者，為說持戒；人中多所貧乏者，為說天上事。惱患居家者，為說出家法；著錢財居家者，為說在家五戒法；若不樂世間，為說三法印：無常，無我，涅槃。</td><td>求富樂的為說布施，欲生天的為說持戒，人間貧乏的為說天上事；厭患居家的為說出家法，貪著錢財而居家的為說在家五戒；若已不樂世間，就為說三法印——無常、無我、涅槃。</td><td class="bh22p5-guan"><b>次第引攝·終三法印</b>——隨根說施戒天，終為說無常無我涅槃三印。</td></tr><tr><td class="bh22p5-src">依隨經法，自演作義理、譬喻，莊嚴法施，為眾生說。如是等種種利益故，當念法施。</td><td>依隨經法，自己演繹義理、譬喻，莊嚴地作法施，為眾生宣說。以這種種利益之故，應當念法施。</td><td class="bh22p5-guan"><b>善巧法施</b>——依經演義、莊嚴而說，種種利益故當念法施。</td></tr><tr><td class="bh22p5-src">捨煩惱者，三結乃至九十八使等皆斷除却，是名為捨。念捨是法，如捨毒蛇、如捨桎梏，得安隱歡喜。</td><td>所謂「捨諸煩惱」：把三結乃至九十八使等都斷除，就名為捨。念此「捨」法，如捨掉毒蛇、如卸下桎梏，得安隱歡喜。</td><td class="bh22p5-guan"><b>捨煩惱·如捨毒蛇</b>——斷三結乃至九十八使，捨惑得安隱歡喜。</td></tr><tr><td class="bh22p5-src">復次，念捨煩惱，亦入念法中。</td><td>再者，念「捨煩惱」也含攝在念法之中。</td><td class="bh22p5-guan"><b>捨攝於念法</b>——念捨煩惱亦含攝在念法之中。</td></tr><tr><td class="bh22p5-src">復次，念法與念捨異。念法，念佛法微妙，諸法中第一；念捨，念諸煩惱罪惡，捨之為快。行相別，是為異。</td><td>再者，念法與念捨有別：念法是念佛法微妙、諸法中第一；念捨是念諸煩惱罪惡、以捨之為快。所觀行相不同，所以有別。</td><td class="bh22p5-guan"><b>念法·念捨之別</b>——念法念其微妙第一、念捨念惑當捨，行相有別。</td></tr><tr><td class="bh22p5-src">如是等種種因緣，行者當念捨。</td><td>以這種種因緣，行者應當念捨。</td><td class="bh22p5-guan"><b>當念捨</b>——以上種種因緣，行者應當念捨。</td></tr><tr><td class="bh22p5-src">念捨者，是初學禪智中，畏生增上慢。</td><td>念捨這件事，是初學禪定智慧時，最怕生起「增上慢」（未得謂得）。</td><td class="bh22p5-guan"><b>防增上慢</b>——初學禪智最怕未得謂得的增上慢，念捨以自省。</td></tr></tbody></table><p class="bh22p5-note">卷二十二第5品「念捨」原文·白話·中觀三欄對照。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh22p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh22p5Btn"),BOX=document.getElementById("bh22p5Box"),MODAL=document.getElementById("bh22p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh22p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH22P5:END-->
 </body></html>
